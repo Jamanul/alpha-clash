@@ -15,6 +15,7 @@ function handleKeyBoardButtonPress(event) {
     const expectedAlphabet = currentAlphabet.toLowerCase()
     console.log(playerPressed, expectedAlphabet)
     // condition to match
+    
     if (playerPressed === expectedAlphabet) {
         console.log('you got a point');
         removeBackgroundColor(expectedAlphabet);
@@ -43,6 +44,9 @@ function handleKeyBoardButtonPress(event) {
         if(newLife===0){
             gameOver()
         }
+    }
+    if(playerPressed === 'Escape'){
+        gameOver();
     }
 }
 document.addEventListener('keyup', handleKeyBoardButtonPress)
