@@ -39,6 +39,7 @@ function finalElementCountById(elementId, value) {
 //     return alphabet;
 // }
 
+
 function getARandomAlphabet() {
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz'
     const alphabets = alphabetString.split('')
@@ -46,4 +47,10 @@ function getARandomAlphabet() {
     const index = Math.round(randomNumber);
     const alphabet = alphabets[index];
     return alphabet;
+}
+
+function getElementTextById(elementId){
+    const element=document.getElementById(elementId)
+    const showElement = element.innerText;
+    return showElement;
 }

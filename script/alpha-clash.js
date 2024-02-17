@@ -70,4 +70,9 @@ function play() {
 function gameOver(){
     hideASection('playing-section')
     addASection('score-section')
+
+    const finalScore= setElementCountById('score-update')
+    finalElementCountById('final-score',finalScore)
+    const displayElement = getElementTextById('display-text')
+    removeBackgroundColor(displayElement)
 }
