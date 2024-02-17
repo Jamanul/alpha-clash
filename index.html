@@ -80,22 +80,23 @@
                     <button class="btn rounded-full bg-violet-300 border-none text-white p-2 px-4">
                         Life
                         <img src="images/love.svg" alt="">
-                        <span>!</span>
+                        <span id="life-update">10</span>
                     </button>
                     <button class="btn rounded-full bg-violet-800 border-none text-white p-2 px-4">
                         Score
                         <img src="images/dollar.svg" alt="">
-                        1
+                        <span id="score-update">0</span>
                     </button>
                 </div>
             </div>
 
         </section>
         <!-- playground end -->
-        <section class="score flex flex-col justify-center items-center min-h-screen hidden">
+        <section id="score-section" class="score flex flex-col justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-8 bg-[#ffffff33] p-8 rounded-2xl">
+                <h1 class="text-5xl">Game Over!</h1>
                 <h1 class="text-8xl font-bold">Score: <span>14</span></h1>
-                <button class="btn text-black bg-white p-4">Play Now</button>
+                <button onclick="play()" class="btn text-black bg-white p-4">Play Now</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
